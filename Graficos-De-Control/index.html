@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TP4 - Gráficos de Control</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Gráfico de Control</h1>
+
+    <label for="caso">Seleccionar caso:</label>
+    <select id="caso">
+        <option value="1">Caso 1 </option>
+        <option value="2">Caso 2 </option>
+        <option value="3">Caso 3 </option>
+        <option value="4">Caso 4</option>
+        <option value="5">Caso 5 </option>
+    </select>
+    <button onclick="cargarDatos()">Cargar gráfico</button>
+
+    <canvas id="grafico" width="800" height="400"></canvas>
+    <div id="alerta"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
